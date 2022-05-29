@@ -69,6 +69,7 @@ class CardDeck {
     }
 
     private fun takeCardsFromTable(userWon: Boolean) {
+        userWonLast = userWon
         var score = 0
         val cards = countCardsInTableDeck()
         tableDeck.forEach {
